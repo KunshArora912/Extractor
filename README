@@ -1,0 +1,61 @@
+# File Extractor Tool
+
+This is a simple graphical tool for extracting ZIP files. It allows users to select multiple ZIP files and extract them to a chosen destination folder using a GUI built with Tkinter.
+
+## Features
+
+- Select multiple ZIP files to extract.
+- Choose a destination folder for extraction.
+- Simple and intuitive graphical interface.
+
+## Requirements
+
+- Python 3.x
+- tkinter
+- pyautogui
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/KunshArora912/Extractor.git
+    cd file-extractor-tool
+    ```
+
+2. Install the required packages:
+    ```sh
+    pip install pyautogui
+    ```
+
+## Usage
+
+1. Run the application:
+    ```sh
+    python file_extractor_tool.py
+    ```
+
+2. Use the "Select Files" button to choose the ZIP files you want to extract.
+
+3. Use the "Select Destination" button to choose the folder where the files will be extracted.
+
+4. Click the "Extract Files" button to start extracting the files.
+
+## Code Explanation
+
+The main functionality is encapsulated in the `FileExtractorApp` class. Here's a brief overview of the methods:
+
+- `__init__(self, root)`: Initializes the application, sets up the main window, and calls `create_widgets` to create the GUI components.
+- `create_widgets(self)`: Creates and packs the buttons for selecting files, choosing the destination, and extracting files.
+- `select_files(self)`: Opens a file dialog to select multiple files and stores them in `self.selected_files`.
+- `select_destination(self)`: Opens a directory dialog to choose the extraction destination and stores it in `self.destination_folder`.
+- `extract_files(self)`: Extracts the selected ZIP files to the chosen destination folder.
+
+## Commented Out Code
+
+There is a section of commented-out code for a "Delete Files" feature. This feature is currently disabled and can be enabled by uncommenting the relevant lines.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+
